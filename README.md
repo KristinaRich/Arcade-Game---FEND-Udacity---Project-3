@@ -1,4 +1,6 @@
-# project3_udacity_fend_arcade-game
+# Udacity FEND
+# Project 3
+# Arcade Game
 
 ## Game Criteria
 Following criteria were to meet:
