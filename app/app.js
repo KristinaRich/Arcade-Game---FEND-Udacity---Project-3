@@ -1,8 +1,9 @@
+// KR - all personal comments have identifier KR.
 let growingScore = 0;
     score = document.querySelector('.score');
     
 score.innerHTML = growingScore;
-// KR - all personal comments have identifier KR.
+
 //KR - Issues with ES6 class. I had to use the initial enemy class definition to make the code work.
 
 // Enemies our player must avoid
@@ -59,10 +60,8 @@ class Figure {
     growingScore++;
     let score = document.querySelector('.score');
     score.innerHTML = growingScore;
-       setTimeout(() => {
-             this.x = 202;
-             this.y = 404;
-           }, 700);
+    this.x = 202;
+    this.y = 404;
    }
   }
 
@@ -81,7 +80,7 @@ class Figure {
      this.y += 83;
     }
   }
-};
+}
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
@@ -93,7 +92,6 @@ let enemy1 = new Enemy(0, 60, (Math.random() * 700));
 let enemy2 = new Enemy(-50, 140, (Math.random() * 600));
 let enemy3 = new Enemy(-150, 220, (Math.random() * 400));
 
-//let allEnemies = [enemy1];
 let allEnemies = [];
 allEnemies.push(enemy1, enemy2, enemy3);
 
